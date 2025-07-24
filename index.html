@@ -5,37 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Srija Kotaru</title>
   <style>
+    :root {
+      --primary-color: #8e44ad;
+      --secondary-color: #f4f1fa;
+      --text-color: #2c2c2c;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f7f7f7, #e3f2fd);
+      background: linear-gradient(to right, #f4f1fa, #e8dff5);
       margin: 0;
       padding: 0;
-      color: #333;
+      color: var(--text-color);
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem 1rem;
-      background-color: #1a237e;
+      padding: 3rem 1rem 2rem;
+      background: var(--primary-color);
       color: white;
     }
 
     h1 {
+      font-size: 3rem;
       margin-bottom: 0.5rem;
-      font-size: 2.5rem;
     }
 
     .bio {
       font-size: 1.2rem;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 0.5rem 1rem 2rem;
+      padding: 0 1.5rem;
       text-align: center;
+      color: white;
     }
 
     section {
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
     }
 
     iframe {
@@ -45,22 +58,22 @@
       margin: 1rem auto;
       display: block;
       border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
     .contact {
-      background-color: #f1f1f1;
+      background-color: var(--secondary-color);
       padding: 2rem;
-      text-align: center;
     }
 
     .contact h2 {
+      color: var(--primary-color);
       margin-bottom: 1rem;
     }
 
     .contact a {
-      color: #1a237e;
+      color: var(--primary-color);
       font-weight: bold;
       text-decoration: none;
     }
@@ -72,7 +85,7 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #1a237e;
+      background-color: var(--primary-color);
       color: white;
       font-size: 0.9rem;
     }
@@ -83,14 +96,12 @@
   <header>
     <h1>Srija Kotaru</h1>
     <div class="bio">
-      Srija Kotaru is an Indian Carnatic and light music singer currently residing in Dallas, Texas.<br>
-      She is passionately preparing to compete in the renowned Indian music show <strong>Indian Idol</strong>.
+      Srija Kotaru is a vocalist from Dallas and a finance major at Indiana University. She has been learning Carnatic music from Rajeshwary Auntie and light music from Parthu Nemani, with whom she’s also completed two musical projects. A USA finalist for Telugu Indian Idol, she’s now moving on to the main stage. Srija is currently working on new musical projects while continuing her training and education.
     </div>
   </header>
 
   <section>
     <h2>Featured Performances</h2>
-
     <iframe src="https://www.youtube.com/embed/9g3-CsX78fM" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/xUV0tCskqm8" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/63N8Cub6Zmo" allowfullscreen></iframe>
