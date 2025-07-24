@@ -4,76 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Srija Kotaru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary-color: #8e44ad;
-      --secondary-color: #f4f1fa;
-      --text-color: #2c2c2c;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f4f1fa, #e8dff5);
-      margin: 0;
-      padding: 0;
-      color: var(--text-color);
+      font-family: 'Inter', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
     }
 
     header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      background: var(--primary-color);
+      background: linear-gradient(120deg, #6b46c1, #b83280);
       color: white;
+      padding: 6rem 2rem;
+      text-align: center;
     }
 
-    h1 {
+    header h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-weight: 800;
     }
 
-    .bio {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      text-align: center;
-      color: white;
+    header .bio {
+      max-width: 700px;
+      margin: 2rem auto 0;
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #6b46c1;
+      font-weight: 600;
     }
 
     section {
-      padding: 3rem 1rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
 
     section h2 {
       font-size: 2rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
+      color: #6b46c1;
+      margin-bottom: 2rem;
     }
 
-    iframe {
-      width: 90%;
-      max-width: 560px;
-      height: 315px;
-      margin: 1rem auto;
-      display: block;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .videos iframe {
+      width: 320px;
+      height: 180px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     }
 
     .contact {
-      background-color: var(--secondary-color);
-      padding: 2rem;
+      background-color: #f9f5ff;
+      padding: 3rem 2rem;
     }
 
     .contact h2 {
-      color: var(--primary-color);
+      color: #6b46c1;
       margin-bottom: 1rem;
     }
 
+    .contact p {
+      font-size: 1.1rem;
+    }
+
     .contact a {
-      color: var(--primary-color);
+      color: #b83280;
       font-weight: bold;
       text-decoration: none;
     }
@@ -84,8 +107,8 @@
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: var(--primary-color);
+      padding: 1.5rem;
+      background-color: #6b46c1;
       color: white;
       font-size: 0.9rem;
     }
@@ -93,21 +116,29 @@
 </head>
 <body>
 
-  <header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#performances">Performances</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="about">
     <h1>Srija Kotaru</h1>
     <div class="bio">
       Srija Kotaru is a vocalist from Dallas and a finance major at Indiana University. She has been learning Carnatic music from Rajeshwary Auntie and light music from Parthu Nemani, with whom she’s also completed two musical projects. A USA finalist for Telugu Indian Idol, she’s now moving on to the main stage. Srija is currently working on new musical projects while continuing her training and education.
     </div>
   </header>
 
-  <section>
+  <section id="performances">
     <h2>Featured Performances</h2>
-    <iframe src="https://www.youtube.com/embed/9g3-CsX78fM" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/xUV0tCskqm8" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/63N8Cub6Zmo" allowfullscreen></iframe>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/9g3-CsX78fM" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/xUV0tCskqm8" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/63N8Cub6Zmo" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact</h2>
     <p>Follow Srija on Instagram: <a href="https://www.instagram.com/srijakotaru" target="_blank">@srijakotaru</a></p>
   </section>
